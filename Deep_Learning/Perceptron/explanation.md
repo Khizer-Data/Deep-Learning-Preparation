@@ -35,8 +35,6 @@ $$
 - **Initialization**: Randomly set, often in range **[-1, 1]** or **[-0.1, 0.1]** for small steps.
 - **Auto-Update**: Adjusted during learning to reduce errors using the learning rule.
 - **Think of it like**: Tuning how much each input “matters.”
-- **Math**: For inputs \( x_1, x_2, \dots \), weights \( w_1, w_2, \dots \) scale them.
-- **Example**: If \( w_1 = 0.5 \), input \( x_1 \) has moderate influence.
 
 ---
 
@@ -73,20 +71,31 @@ $$
 - **Common Choices**: Step function (0 or 1), Sigmoid function (0 to 1), ReLU (rectified linear unit).
 - **Think of it like**: A switch that decides if the cake is good or not.
 - **why?** To make the perceptron learn complex patterns.
-- ""Step Function" is a simple one:
+- **Step Function** is a simple one:
   - If \( z \) is positive, output 1.
   - If \( z \) is negative or zero, output 0.
 - **Example**: If \( z = 0.5 \), the step function outputs 1.
 
 ---
 
-## 🖼️ How It Works
-1. **Start**: Set random **weights** (e.g., [-0.1, 0.1]) and **bias** (e.g., 0).
-2. **Process**: Inputs (\( x_1, x_2, \dots \)) are multiplied by weights, summed, and bias is added: \( z = (w_1 \cdot x_1 + w_2 \cdot x_2 + \dots) + b \).
-3. **Predict**: Pass \( z \) through an activation function (like a yes/no switch) to get \( \hat{y} \).
-4. **Learn**: If \( \hat{y} \) is wrong, the **learning rule** automatically updates weights and bias using the **learning rate** to reduce errors.
+🖼️ How It Works
+
+Start: Initialize random weights (e.g., between -0.1 and 0.1) and bias (e.g., 0).
+Process: Multiply each input (x1, x2, ...) by its weight, sum them, and add the bias:z = (w1 * x1 + w2 * x2 + ...) + b
+
+
+Predict: Pass z through an activation function (like a yes/no switch) to get the output ŷ.
+Learn: If ŷ is wrong, the learning rule updates weights and bias using the learning rate to reduce errors.
+Repeat: Keep predicting and learning until the perceptron is good at classifying.
 
 ---
+
+### Advantages:
+
+* Simple to understand and implement.
+* Works well for linearly separable data.
+
+
 ### Limitations:
 
 * Cannot solve problems like XOR (non-linearly separable).
