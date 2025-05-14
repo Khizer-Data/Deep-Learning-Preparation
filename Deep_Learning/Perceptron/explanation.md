@@ -50,8 +50,8 @@ $$
 ### 3. **Perceptron Learning Rule** 📚
 - **What?** The recipe to automatically update weights and bias when predictions are wrong.
 - **How?** If predicted output \( \hat{y} \) ≠ actual output \( y \):
-  - Weight update: \( w_i \gets w_i + \eta (y - \hat{y}) x_i \)
-  - Bias update: \( b \gets b + \eta (y - \hat{y}) \)
+    - Weight: w_i = w_i + η * (y - ŷ) * x_i
+    - Bias: b = b + η * (y - ŷ)
 - **Think of it like**: Fixing the recipe after a bad cake! 🥮
 - **Auto?** Yes! Updates happen every time the perceptron learns.
 
