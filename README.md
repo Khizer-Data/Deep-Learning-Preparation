@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-### 1. [Perceptron](https://github.com/Khizer-Data/Deep-Learning-Preparation-/tree/main/Deep_Learning/Perceptron)
+### 1. [Perceptron](https://github.com/Khizer-Data/Deep-Learning-Preparation-/tree/main/Deep_Learning/Perceptron/explanation.md)
 - Explanation (Markdown)  
   └─ Includes link to the original Rosenblatt (1958) paper
 - Code from Scratch (Notebook)
