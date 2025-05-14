@@ -28,6 +28,6 @@ $$
 ### Limitations:
 
 * Cannot solve problems like XOR (non-linearly separable).
+![XOR Problem](Deep_Learning/Perceptron/images/Xor_problem.jpeg)
 * This led to the development of **multi-layer perceptrons (MLPs)** and **deep neural networks**, which overcome these limitations.
-
-Would you like a visual or code example to help understand it better?
+Deep_Learning/Perceptron/images/Xor_problem.jpeg
