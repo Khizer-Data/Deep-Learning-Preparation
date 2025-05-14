@@ -5,8 +5,6 @@ A perceptron takes several inputs, applies weights to them, sums them up, and pa
 
 <img src="https://github.com/Khizer-Data/Deep-Learning-Preparation-/raw/main/Deep_Learning/Perceptron/images/Perceptron.jpeg" alt="🌟 Perceptron 🌟" width="300" title="Perceptron">
 
-problem! 🔢</p>
-
 </div>
 
 A **perceptron** is the simplest type of artificial neural network, and it's used for **binary classification** tasks. It was first introduced by **Frank Rosenblatt in 1958**.
@@ -32,6 +30,63 @@ $$
 * It uses the **perceptron learning rule** to adjust weights.
 * Works only for **linearly separable** data.
 
+### 1. **Weights (w)** 🏋️‍♂️
+- **What?** Numbers set at the start to weigh each input’s importance.
+- **Initialization**: Randomly set, often in range **[-1, 1]** or **[-0.1, 0.1]** for small steps.
+- **Auto-Update**: Adjusted during learning to reduce errors using the learning rule.
+- **Think of it like**: Tuning how much each input “matters.”
+- **Math**: For inputs \( x_1, x_2, \dots \), weights \( w_1, w_2, \dots \) scale them.
+- **Example**: If \( w_1 = 0.5 \), input \( x_1 \) has moderate influence.
+
+---
+
+### 2. **Bias (b)** ⚖️
+- **What?** A constant also set at the start to shift the decision boundary.
+- **Initialization**: Often set to **0** or a small random value like **[-0.1, 0.1]**.
+- **Auto-Update**: Tweaked automatically with the learning rule.
+- **Think of it like**: A nudge to get the prediction just right.
+- **Why?** Makes the perceptron flexible to fit data better.
+
+---
+
+### 3. **Perceptron Learning Rule** 📚
+- **What?** The recipe to automatically update weights and bias when predictions are wrong.
+- **How?** If predicted output \( \hat{y} \) ≠ actual output \( y \):
+  - Weight update: \( w_i \gets w_i + \eta (y - \hat{y}) x_i \)
+  - Bias update: \( b \gets b + \eta (y - \hat{y}) \)
+- **Think of it like**: Fixing the recipe after a bad cake! 🥮
+- **Auto?** Yes! Updates happen every time the perceptron learns.
+
+---
+
+### 4. **Learning Rate (η)** ⚙️
+- **What?** A small number (e.g., **0.01** or **0.001**) that controls how much weights and bias change.
+- **Why Small?** Small steps prevent overshooting the best solution, ensuring steady learning.
+- **Think of it like**: Fine-tuning a radio dial to get the perfect signal. 🎛️
+- **Why Important?** Too big (e.g., 1.0) = wild jumps, missing the target. Too small (e.g., 0.0001) = super slow learning.
+- **Typical Range**: **0.001 to 0.1**, tweaked to optimize results.
+
+---
+
+### 5. **Activation Function** 🚀
+- **What?** A function that decides whether the perceptron should output 0 or 1.
+- **Common Choices**: Step function (0 or 1), Sigmoid function (0 to 1), ReLU (rectified linear unit).
+- **Think of it like**: A switch that decides if the cake is good or not.
+- **why?** To make the perceptron learn complex patterns.
+- ""Step Function" is a simple one:
+  - If \( z \) is positive, output 1.
+  - If \( z \) is negative or zero, output 0.
+- **Example**: If \( z = 0.5 \), the step function outputs 1.
+
+---
+
+## 🖼️ How It Works
+1. **Start**: Set random **weights** (e.g., [-0.1, 0.1]) and **bias** (e.g., 0).
+2. **Process**: Inputs (\( x_1, x_2, \dots \)) are multiplied by weights, summed, and bias is added: \( z = (w_1 \cdot x_1 + w_2 \cdot x_2 + \dots) + b \).
+3. **Predict**: Pass \( z \) through an activation function (like a yes/no switch) to get \( \hat{y} \).
+4. **Learn**: If \( \hat{y} \) is wrong, the **learning rule** automatically updates weights and bias using the **learning rate** to reduce errors.
+
+---
 ### Limitations:
 
 * Cannot solve problems like XOR (non-linearly separable).
