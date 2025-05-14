@@ -278,3 +278,16 @@ w₁x₁ + w₂x₂ + b = 0
 ```
 
 This equation represents the line that separates the "go for a walk" region from the "don't go for a walk" region in the feature space.
+
+## Code from Scratch in notebook
+
+ - link: [code_from_scratch.ipynb](https://github.com/Khizer-Data/Deep-Learning-Preparation-/blob/main/Deep_Learning/Perceptron/code_from_scratch.ipynb)
+
+ ---
+
+ ## Code from Libraries in notebook
+
+ - link: [code_from_libraries.ipynb](https://github.com/Khizer-Data/Deep-Learning-Preparation-/blob/main/Deep_Learning/Perceptron/code_from_libraries.ipynb)
+
+ 
+### Thank you for reading! 🌟
