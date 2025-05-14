@@ -134,3 +134,147 @@ There is **no single straight line** that can separate the output classes (0 vs.
 
 * This led to the development of **multi-layer perceptrons (MLPs)** and **deep neural networks**, which overcome these limitations.
 
+## Real-Life Example: Decision to Go for a Walk
+
+We'll use a perceptron to decide whether to go for a walk based on two factors:
+
+* x₁: Is it sunny? (1 = Yes, 0 = No)
+* x₂: Do you have free time? (1 = Yes, 0 = No)
+
+The perceptron will predict:
+* ŷ = 1 → Go for a walk
+* ŷ = 0 → Don't go for a walk
+
+## Perceptron Parameters
+
+Our perceptron has:
+* Weights: w₁ = 0.6, w₂ = 0.4
+* Bias: b = -0.5
+* Activation function: Step function
+
+```
+step(z) = {
+    1 if z ≥ 0
+    0 if z < 0
+}
+```
+
+## Perceptron Formula
+
+For any input, we calculate:
+
+1. The weighted sum (including bias): z = w₁x₁ + w₂x₂ + b
+2. Apply the activation function: ŷ = step(z)
+
+## Example 1: Sunny but No Free Time
+
+Input:
+* x₁ = 1 (It is sunny)
+* x₂ = 0 (You don't have free time)
+
+Calculation:
+1. Weighted sum:
+   ```
+   z = w₁x₁ + w₂x₂ + b
+   z = (0.6 × 1) + (0.4 × 0) + (-0.5)
+   z = 0.6 + 0 - 0.5 = 0.1
+   ```
+
+2. Apply activation function:
+   ```
+   ŷ = step(z) = step(0.1) = 1
+   ```
+
+Decision: Since ŷ = 1, the perceptron recommends going for a walk.
+
+## Example 2: Not Sunny but Have Free Time
+
+Input:
+* x₁ = 0 (Not sunny)
+* x₂ = 1 (You have free time)
+
+Calculation:
+1. Weighted sum:
+   ```
+   z = w₁x₁ + w₂x₂ + b
+   z = (0.6 × 0) + (0.4 × 1) + (-0.5)
+   z = 0 + 0.4 - 0.5 = -0.1
+   ```
+
+2. Apply activation function:
+   ```
+   ŷ = step(z) = step(-0.1) = 0
+   ```
+
+Decision: Since ŷ = 0, the perceptron recommends not going for a walk.
+
+## Example 3: Sunny and Have Free Time
+
+Input:
+* x₁ = 1 (It is sunny)
+* x₂ = 1 (You have free time)
+
+Calculation:
+1. Weighted sum:
+   ```
+   z = w₁x₁ + w₂x₂ + b
+   z = (0.6 × 1) + (0.4 × 1) + (-0.5)
+   z = 0.6 + 0.4 - 0.5 = 0.5
+   ```
+
+2. Apply activation function:
+   ```
+   ŷ = step(z) = step(0.5) = 1
+   ```
+
+Decision: Since ŷ = 1, the perceptron recommends going for a walk.
+
+## Example 4: Not Sunny and No Free Time
+
+Input:
+* x₁ = 0 (Not sunny)
+* x₂ = 0 (You don't have free time)
+
+Calculation:
+1. Weighted sum:
+   ```
+   z = w₁x₁ + w₂x₂ + b
+   z = (0.6 × 0) + (0.4 × 0) + (-0.5)
+   z = 0 + 0 - 0.5 = -0.5
+   ```
+
+2. Apply activation function:
+   ```
+   ŷ = step(z) = step(-0.5) = 0
+   ```
+
+Decision: Since ŷ = 0, the perceptron recommends not going for a walk.
+
+## Interpretation of the Weights
+
+- The weight for "sunny" ($w_1 = 0.6$) is higher than the weight for "free time" ($w_2 = 0.4$), indicating that good weather has more influence on the decision to go for a walk than having free time.
+- The bias ($b = -0.5$) is negative, which means there's a default inclination not to go for a walk unless the positive factors are strong enough.
+- For the perceptron to recommend going for a walk ($z \geq 0$), you need either:
+  * Sunny weather (which contributes 0.6 to the sum), or
+  * Both factors to be positive (sunny and free time)
+
+## Complete Truth Table
+
+| x₁ (Sunny) | x₂ (Free Time) | Weighted Sum (z) | Output (ŷ) | Decision |
+|------------|----------------|------------------|------------|----------|
+| 0 | 0 | 0 + 0 - 0.5 = -0.5 | 0 | Don't go |
+| 0 | 1 | 0 + 0.4 - 0.5 = -0.1 | 0 | Don't go |
+| 1 | 0 | 0.6 + 0 - 0.5 = 0.1 | 1 | Go for a walk |
+| 1 | 1 | 0.6 + 0.4 - 0.5 = 0.5 | 1 | Go for a walk |
+
+## Decision Boundary
+
+The perceptron's decision boundary is the line where z = 0:
+
+```
+w₁x₁ + w₂x₂ + b = 0
+0.6x₁ + 0.4x₂ - 0.5 = 0
+0.6x₁ + 0.4x₂ = 0.5
+```
+
+This equation represents the line that separates the "go for a walk" region from the "don't go for a walk" region in the feature space.
