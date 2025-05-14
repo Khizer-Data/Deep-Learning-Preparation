@@ -1,3 +1,10 @@
+<div align="center">
+
+<img src="https://github.com/Khizer-Data/Deep-Learning-Preparation-/raw/main/Deep_Learning/Perceptron/images/Perceptron.jpeg" alt="🌟 Perceptron 🌟" width="300" title="Perceptron">
+
+<p style="text-align: center; color: #4682b4; font-style: italic;">A fun look at the XOR problem! 🔢</p>
+
+</div>
 A **perceptron** is the simplest type of artificial neural network, and it's used for **binary classification** tasks. It was first introduced by **Frank Rosenblatt in 1958**.
 
 ### Basic Idea:
@@ -62,4 +69,4 @@ There is **no single straight line** that can separate the output classes (0 vs.
 
 
 * This led to the development of **multi-layer perceptrons (MLPs)** and **deep neural networks**, which overcome these limitations.
-Deep_Learning/Perceptron/images/Xor_problem.jpeg
+
