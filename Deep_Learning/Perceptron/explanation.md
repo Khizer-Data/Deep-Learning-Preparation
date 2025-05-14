@@ -289,5 +289,10 @@ This equation represents the line that separates the "go for a walk" region from
 
  - link: [code_from_libraries.ipynb](https://github.com/Khizer-Data/Deep-Learning-Preparation-/blob/main/Deep_Learning/Perceptron/code_from_libraries.ipynb)
 
+ ## link to original Paper:
+
+ - link: [Perceptron Paper](
+
+ - link: [Perceptron Paper](https://www.ling.upenn.edu/courses/cogs501/Rosenblatt1958.pdf)
  
 ### Thank you for reading! 🌟
