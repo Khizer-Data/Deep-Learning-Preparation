@@ -5,10 +5,12 @@ A perceptron takes several inputs, applies weights to them, sums them up, and pa
 
 <img src="https://github.com/Khizer-Data/Deep-Learning-Preparation-/raw/main/Deep_Learning/Perceptron/images/Perceptron.jpeg" alt="🌟 Perceptron 🌟" width="300" title="Perceptron">
 
-<p style="text-align: center; color: #4682b4; font-style: italic;">A fun look at the XOR problem! 🔢</p>
+problem! 🔢</p>
 
 </div>
+
 A **perceptron** is the simplest type of artificial neural network, and it's used for **binary classification** tasks. It was first introduced by **Frank Rosenblatt in 1958**.
+
 ### Formula:
 
 Given inputs $x_1, x_2, ..., x_n$ and weights $w_1, w_2, ..., w_n$, the perceptron computes:
