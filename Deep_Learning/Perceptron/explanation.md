@@ -1,3 +1,6 @@
+### Basic Idea:
+
+A perceptron takes several inputs, applies weights to them, sums them up, and passes the result through an **activation function** (usually a step function) to produce a binary output (0 or 1).
 <div align="center">
 
 <img src="https://github.com/Khizer-Data/Deep-Learning-Preparation-/raw/main/Deep_Learning/Perceptron/images/Perceptron.jpeg" alt="🌟 Perceptron 🌟" width="300" title="Perceptron">
@@ -6,11 +9,6 @@
 
 </div>
 A **perceptron** is the simplest type of artificial neural network, and it's used for **binary classification** tasks. It was first introduced by **Frank Rosenblatt in 1958**.
-
-### Basic Idea:
-
-A perceptron takes several inputs, applies weights to them, sums them up, and passes the result through an **activation function** (usually a step function) to produce a binary output (0 or 1).
-
 ### Formula:
 
 Given inputs $x_1, x_2, ..., x_n$ and weights $w_1, w_2, ..., w_n$, the perceptron computes:
