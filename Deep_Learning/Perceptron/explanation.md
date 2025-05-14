@@ -28,6 +28,38 @@ $$
 ### Limitations:
 
 * Cannot solve problems like XOR (non-linearly separable).
-![XOR Problem](Deep_Learning/Perceptron/images/Xor_problem.jpeg)
+<div align="center">
+
+<img src="https://github.com/Khizer-Data/Deep-Learning-Preparation-/raw/main/Deep_Learning/Perceptron/images/Xor_problem.jpeg" alt="🌟 XOR Problem 🌟" width="300" title="The XOR Problem Explained">
+
+<p style="text-align: center; color: #4682b4; font-style: italic;">A fun look at the XOR problem! 🔢</p>
+
+</div>
+
+Great! Let’s go step-by-step:
+
+---
+
+### **1. XOR & Non-Linearity**
+
+The **XOR (exclusive OR)** logic is:
+
+| Input A | Input B | Output A XOR B |
+| ------- | ------- | -------------- |
+| 0       | 0       | 0              |
+| 0       | 1       | 1              |
+| 1       | 0       | 1              |
+| 1       | 1       | 0              |
+
+Now plot these points:
+
+* (0, 0) → 0
+* (0, 1) → 1
+* (1, 0) → 1
+* (1, 1) → 0
+
+There is **no single straight line** that can separate the output classes (0 vs. 1) — this is what we mean by **non-linear**. The **basic perceptron fails** to solve this.
+
+
 * This led to the development of **multi-layer perceptrons (MLPs)** and **deep neural networks**, which overcome these limitations.
 Deep_Learning/Perceptron/images/Xor_problem.jpeg
